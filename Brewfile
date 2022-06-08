@@ -18,6 +18,7 @@ brew "terraform_landscape"
 cask "brave-browser"
 cask "google-chrome"
 
+brew "nvim"
 brew "tmux"
 cask "intellij-idea-ce"
 cask "pycharm-ce"
