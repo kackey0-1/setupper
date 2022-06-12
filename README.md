@@ -2,9 +2,10 @@
 
 ```bash
 ln -s `pwd`/.config/nvim ~/.config/nvim
+ln -s `pwd`/.zshrc ~/.zshrc
 ```
 
-## For vim/nvim instruction
+## For vim/nvim Instruction
 Learn vim with Game (here)[https://vim-adventures.com/]
 
 - Execution
@@ -38,4 +39,33 @@ Learn vim with Game (here)[https://vim-adventures.com/]
 ```bash
 :NERDTree
 ```
+
+### FuzzyFinder
+### vim-fugitive
+### vim-gitgutter
+### vim-comentary
+### vim-polyglot
+### coc-nvim
+### vim-go
+
+## For Tmux Instruction
+
+## For Zsh Instruction
+
+### Zsh History
+```zsh
+# search history
+ctrl r
+```
+
+### Setup Oh My Zsh
+```zsh
+# install oh my zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# applied pre setting to current
+cat ~/.zshrc.pre-oh-my-zsh >> ~/.zshrc
+```
+
+
 

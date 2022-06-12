@@ -14,7 +14,7 @@ call plug#end()
 
 let NERDTreeShowHidden=1
 " Start NERDTree when VIM is started without file arguments.
-autocmd StdinRead * let s:std_in=1
+autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 
 " if you don't set this option, this color might not correct
