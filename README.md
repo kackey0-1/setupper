@@ -1,6 +1,7 @@
-# vimrc
 
-# For vim/nvim instruction
+# For Initial Setup local machine
+
+## For vim/nvim instruction
 - Execution
   ```bash
   # commandline execution in nvim/vim
