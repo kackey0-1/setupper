@@ -31,4 +31,4 @@ cask "licecap"
 cask "slack"
 cask "zoom"
 cask "kindle"
-
+cask "clipy"
