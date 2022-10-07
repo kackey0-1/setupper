@@ -40,6 +40,24 @@ Learn vim with Game (here)[https://vim-adventures.com/]
 :NERDTree
 ```
 
+### About todo.txt PlugIn
+
+```bash
+mkdir $HOME/.todo
+touch $HOME/.todo/config
+cp -n /opt/homebrew/opt/todo-txt/todo.cfg ~/.todo.cfg
+```
+
+- todo.txt plugin
+  - [todo.txt](https://github.com/callmekohei/vim-todoedit/blob/master/doc/todoedit.txt)
+  - [todo.txt-cli](https://github.com/todotxt/todo.txt-cli)
+
+```md
+- Done: <space> d
+- Sort by Due: <space> s d
+- Open Folded Task: <space> <space>
+```
+
 ### FuzzyFinder
 ### vim-fugitive
 ### vim-gitgutter
@@ -66,6 +84,5 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # applied pre setting to current
 cat ~/.zshrc.pre-oh-my-zsh >> ~/.zshrc
 ```
-
 
 
