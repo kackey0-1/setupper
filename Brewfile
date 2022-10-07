@@ -7,7 +7,6 @@ brew "docker"
 cask "docker"
 brew "docker-compose"
 brew "gradle"
-brew "asdf"
 brew "awscli"
 brew "kubectl"
 brew "minikube"
@@ -15,8 +14,9 @@ brew "minikube"
 # brew "terraform"
 # brew "terraform_landscape"
 
-cask "brave-browser"
-cask "google-chrome"
+# language tools
+brew "asdf"
+brew "gcc"
 
 # command line tools 
 brew "git"
@@ -37,5 +37,7 @@ cask "postman"
 cask "licecap"
 cask "slack"
 cask "zoom"
+cask "brave-browser"
+cask "google-chrome"
 # cask "kindle"
 
