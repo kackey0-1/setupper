@@ -41,9 +41,20 @@ Learn vim with Game (here)[https://vim-adventures.com/]
 ```
 
 ### About todo.txt PlugIn
+```bash
+mkdir $HOME/.todo
+touch $HOME/.todo/config
+```
+
 - todo.txt plugin
   - [todo.txt](https://github.com/callmekohei/vim-todoedit/blob/master/doc/todoedit.txt)
   - [todo.txt-cli](https://github.com/todotxt/todo.txt-cli)
+
+```md
+- Done: <space> d
+- Sort by Due: <space> s d
+- Open Folded Task: <space> <space>
+```
 
 ### FuzzyFinder
 ### vim-fugitive
