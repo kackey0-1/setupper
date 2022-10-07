@@ -28,7 +28,7 @@ autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 " todo.txt
 " set runtimepath+=/PATH/TO/vim-partedit
 let g:maplocalleader="\<Space>"
-let g:doneTaskFile='~/done.txt'
+let g:doneTaskFile=environ()['HOME'] . "/done.txt"
 
 " if you don't set this option, this color might not correct
 " set termguicolors

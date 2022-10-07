@@ -41,9 +41,11 @@ Learn vim with Game (here)[https://vim-adventures.com/]
 ```
 
 ### About todo.txt PlugIn
+
 ```bash
 mkdir $HOME/.todo
 touch $HOME/.todo/config
+cp -n /opt/homebrew/opt/todo-txt/todo.cfg ~/.todo.cfg
 ```
 
 - todo.txt plugin
