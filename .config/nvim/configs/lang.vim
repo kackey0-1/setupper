@@ -10,9 +10,9 @@ nmap \C <Plug>(caw:I:uncomment)
 vmap \C <Plug>(caw:I:uncomment)
 
 "# Shougo/neocomplcache.vim: 補完を有効にする
-let g:neocomplete#enable_at_startup=1
+let g:neocomplcache_enable_at_startup=1
 " 補完に時間がかかってもスキップしない
-let g:neocomplete#skip_auto_completion_time=""
+let g:neocomplcache#skip_auto_completion_time=""
 
 "# t9md/vim-quickhl: <Space>m でカーソル下の単語、もしくは選択した範囲のハイライトを行う
 " 再度 <Space>m を行うとカーソル下のハイライトを解除する
