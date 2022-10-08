@@ -1,9 +1,8 @@
 # For Initial Setup local machine
 
 ```bash
-brew install vim --with-luajit
-brew install neovim --with-luajit
-
+brew install deno
+brew install rust
 
 ln -s `pwd`/.config/nvim ~/.config/nvim
 ln -s `pwd`/.zshrc ~/.zshrc
