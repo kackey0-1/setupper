@@ -1,6 +1,9 @@
 # For Initial Setup local machine
 
 ```bash
+brew install deno
+brew install rust
+
 ln -s `pwd`/.config/nvim ~/.config/nvim
 ln -s `pwd`/.zshrc ~/.zshrc
 ```
