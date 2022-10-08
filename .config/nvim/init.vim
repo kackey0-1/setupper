@@ -25,7 +25,12 @@ call plug#begin()
     " clang plugin start
     " https://osyo-manga.hatenadiary.org/entry/20131219/1387465034
     Plug 'tyru/caw.vim'
-    Plug 'Shougo/neocomplete.vim'
+    Plug 't9md/vim-quickhl'
+    " Plug 'Shougo/neocomplete.vim'
+    Plug 'Shougo/neocomplcache.vim'
+    Plug 'Shougo/unite.vim'
+    Plug 'Shougo/unite-outline'
+    Plug 'osyo-manga/vim-marching'
     " clang plugin end
 call plug#end()
 
