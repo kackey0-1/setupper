@@ -25,6 +25,12 @@ xmap <Space>M <Plug>(quickhl-manual-reset)
 " Unite file -vertical -winwidth=40
 
 "# neoclide/coc.nvim
+let g:coc_global_extensions = [
+  \'coc-json',
+  \'coc-git',
+  \'coc-html',
+  \'coc-clangd',
+  \'coc-rls']
 "" Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup

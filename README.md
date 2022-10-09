@@ -3,6 +3,7 @@
 ```bash
 brew install deno
 brew install rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ./initializer.sh
 # ln -s `pwd`/.config/nvim ~/.config/nvim
