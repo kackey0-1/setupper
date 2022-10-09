@@ -15,7 +15,6 @@ call plug#begin()
 Plug 'ntk148v/vim-horizon'
 Plug 'preservim/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'tfnico/vim-gradle'
 
@@ -37,7 +36,7 @@ Plug 't9md/vim-quickhl'
 " clang: https://zenn.dev/urawa72/articles/07c75d8da8bab500f12a
 " rust : https://zenn.dev/yuucu/articles/vimrc-rust-yuucu
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rust-lang/rust.vim'
 "# lang plugins end
 call plug#end()
