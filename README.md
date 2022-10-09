@@ -3,9 +3,16 @@
 ```bash
 brew install deno
 brew install rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-ln -s `pwd`/.config/nvim ~/.config/nvim
-ln -s `pwd`/.zshrc ~/.zshrc
+./initializer.sh
+# ln -s `pwd`/.config/nvim ~/.config/nvim
+# ln -s `pwd`/.zshrc ~/.zshrc
+
+## coc.nvimがclangdに接続するため、coc-clangdというプラグインが必要
+## 以下のcommandをvimを開いて実行
+:CocInstall coc-clangd 
+:CocInstall coc-rls
 ```
 
 ## For vim/nvim Instruction

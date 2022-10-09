@@ -6,44 +6,39 @@ set autoindent
 set hlsearch
 set clipboard=unnamed
 set number
+set wrap
+nnoremap j gj
+nnoremap k gk
 syntax on
 
 call plug#begin()
-    Plug 'ntk148v/vim-horizon'
-    Plug 'preservim/nerdtree'
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'sheerun/vim-polyglot'
-    Plug 'tfnico/vim-gradle'
-    " todo.txt plugin start -> nvim-todo.vim
-    Plug 'callmekohei/vim-todoedit'
-    Plug 'Shougo/deoplete.nvim'
-    Plug 'callmekohei/deoplete-todoedit'
-    Plug 'thinca/vim-partedit'
-    " todo.txt plugin end
+Plug 'ntk148v/vim-horizon'
+Plug 'preservim/nerdtree'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'sheerun/vim-polyglot'
+Plug 'tfnico/vim-gradle'
 
-    " clang plugin start
-    " https://osyo-manga.hatenadiary.org/entry/20131219/1387465034
-    Plug 'tyru/caw.vim'
-    Plug 't9md/vim-quickhl'
-    " Plug 'Shougo/neocomplete.vim'
-    " Plug 'Shougo/neocomplcache.vim'
-    " https://github.com/Shougo/ddc.vim
-    Plug 'Shougo/ddc.vim'
-    Plug 'vim-denops/denops.vim'
-    Plug 'Shougo/pum.vim'
-    Plug 'Shougo/ddc-around'
-    Plug 'LumaKernel/ddc-file'
-    Plug 'Shougo/ddc-matcher_head'
-    Plug 'Shougo/ddc-sorter_rank'
-    Plug 'Shougo/ddc-converter_remove_overlap'
-    Plug 'prabirshrestha/vim-lsp'
-    Plug 'mattn/vim-lsp-settings'
-    Plug 'Shougo/deoplete.nvim'
-    Plug 'Shougo/unite.vim'
-    Plug 'Shougo/unite-outline'
-    Plug 'osyo-manga/vim-marching'
-    " clang plugin end
+"# todo.txt plugin start -> nvim-todo.vim
+Plug 'callmekohei/vim-todoedit'
+Plug 'Shougo/deoplete.nvim'
+Plug 'callmekohei/deoplete-todoedit'
+Plug 'thinca/vim-partedit'
+"# todo.txt plugin end
+
+"# lang plugins start
+" https://osyo-manga.hatenadiary.org/entry/20131219/1387465034
+Plug 'tyru/caw.vim'
+Plug 't9md/vim-quickhl'
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" plugins reference for code completion.
+" // https://github.com/Shougo/ddc.vim
+" // https://zenn.dev/matsui54/articles/2021-09-03-ddc-lsp
+" clang: https://zenn.dev/urawa72/articles/07c75d8da8bab500f12a
+" rust : https://zenn.dev/yuucu/articles/vimrc-rust-yuucu
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'rust-lang/rust.vim'
+"# lang plugins end
 call plug#end()
 
 let NERDTreeShowHidden=1
@@ -58,7 +53,7 @@ autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 " let g:lightline={}
 " let g:lightline.colorscheme='horizon'
 
-let splt = split(glob("~/.config/nvim/configs/" . "*.vim"))
+let splt = split(glob($HOME . "/.config/nvim/configs/" . "*.vim"))
 for file in splt
     " echo "load " . file
     execute 'source' file

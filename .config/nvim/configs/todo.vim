@@ -1,4 +1,3 @@
-" todo.txt
 " set runtimepath+=/PATH/TO/vim-partedit
 let g:maplocalleader="\<Space>"
 let g:doneTaskFile=environ()['HOME'] . "/done.txt"
