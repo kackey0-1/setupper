@@ -37,6 +37,7 @@ Plug 't9md/vim-quickhl'
 " rust : https://zenn.dev/yuucu/articles/vimrc-rust-yuucu
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc-prettier'
 Plug 'rust-lang/rust.vim'
 "# lang plugins end
 call plug#end()

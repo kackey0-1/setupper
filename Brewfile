@@ -24,6 +24,7 @@ brew "tig"
 brew "nvim"
 brew "tmux"
 brew "todo-txt"
+brew "brew fzf"
 
 # ide tools
 cask "intellij-idea-ce"
