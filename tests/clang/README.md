@@ -41,3 +41,9 @@ https://c-lang.sevendays-study.com/day2.html
 | %lo | long, unsigned long                      | 倍精度整数を8進で出力する      | "%12lo"        |
 | %lx | long, unsigned long                      | 倍精度整数を16進で出力する     | "%08lx"        |
 | %lf | double                                   | 倍精度実数を出力する         | "%8.3lf"       |
+
+## Compile with multiple files
+```bash
+gcc -o a.out multfiles.c calc.c
+```
+
