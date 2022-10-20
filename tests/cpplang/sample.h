@@ -4,6 +4,15 @@
 class CSample
 {
     public:
+        int a;
+    private:
+        int b;
+    public:
+        void setB(int num);
+        int getB();
+        void func1();
+    private: 
+        void func2();
         void set(int num);
         int get();
     private:
