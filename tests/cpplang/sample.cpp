@@ -1,11 +1,30 @@
 #include "sample.h"
+#include <iostream>
 
-void CSample::set(int num)
+using namespace std;
+
+void CSample::func1()
 {
-    m_num = num;
+    cout << "func1" << endl;
+    a = 1;
+    b = 2;
+    func2();
 }
 
-int CSample::get()
+void CSample::func2()
 {
-    return m_num;
+    a = 2;
+    b = 3;
+    cout << "a=" << a << ", " << "b=" << b << endl;
 }
+
+void CSample::setB(int num)
+{
+    b = num;
+}
+
+int CSample::getB()
+{
+    return b;
+}
+
