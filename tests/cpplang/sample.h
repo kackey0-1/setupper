@@ -13,6 +13,10 @@ class CSample
         void func1();
     private: 
         void func2();
+        void set(int num);
+        int get();
+    private:
+        int m_num;
 };
 #endif // _SAMPLE_H_
 
