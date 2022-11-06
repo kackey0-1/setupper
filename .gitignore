@@ -1,5 +1,7 @@
 .idea
 target
+tests/playground
 
 # file
 *.out
+.DS_Store
