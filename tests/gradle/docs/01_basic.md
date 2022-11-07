@@ -1,4 +1,4 @@
-# Kotlin
+# Kotlin Basics
 
 ## From Java to Kotlin
 - automatically convert Java code to Kotlin
@@ -140,6 +140,17 @@
 // lowercase letters or the range upper case letters ?
 fun isLetter(c: Char) = c in 'a'..'z' || c in 'A'..'Z'
 ```
+
+## Exceptions
+- if you want to  use try-catch in Java, `@Throws` annotation is required
+```kotlin
+fun foo() { throw IOException() }
+
+@Throws(IOException::class)
+fun bar() { throw IOException() }
+```
+
+# Kotlin Classes
 
 ## data class
 - getter and setter

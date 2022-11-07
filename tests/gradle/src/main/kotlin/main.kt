@@ -3,6 +3,7 @@
 import kotlin.test.*
 
 fun main() {
+    /*
     val question: String = "life, the universe, and everything"
     val abc = listOf("a", "b", "c")
         .joinToString(separator = "", prefix = "(", postfix = ")")
@@ -12,9 +13,15 @@ fun main() {
     println(abc)
     displaySeparator(size = 100)
     for (c in 'a'..'z') {
-        print(c)
+        println(c)
     }
+     */
+    val c: Char = "Kotlin".lastChar()
+    displaySeparator()
+    println(c)
 }
+
+fun String.lastChar(): Char = get(length - 1)
 
 fun displaySeparator(charactor: Char = '*', size: Int = 50) {
     repeat(size) {
