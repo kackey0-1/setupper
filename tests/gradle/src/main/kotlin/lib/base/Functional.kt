@@ -4,12 +4,27 @@ package lib.base
  * Higher-Order Functions
  *   - A higher-order function is a function that takes functions as parameters, or returns a function.
  */
-
 fun calculate(x: Int, y: Int, operation: (Int, Int) -> Int): Int {
     return operation(x, y)
 }
 fun sum(x: Int, y: Int) = x + y
 fun multiple(x: Int, y: Int) = x * y
+
+/**
+ * infix functions
+ */
+infix fun String.substringMatches(r: Regex) : List<String> {
+    return r.findAll(this)
+        .map { it.value }
+        .toList()
+}
+class Math(private val target: Int) {
+    infix fun add(other: Int) = target + other
+}
+
+/**
+ * TODO Inline functions
+ */
 
 /**
  * Lambda Functions
@@ -39,6 +54,11 @@ fun main() {
     val mulResult = calculate(4, 5) { a, b -> a * b }
     val multipleResult = calculate(4, 5, ::multiple)
     println("sumResult $sumResult, mulResult $mulResult, multipleResult $multipleResult")
+    println("********* Infix Functions *********")
+    val matches = "a bc def" substringMatches ".*? ".toRegex()
+    println(matches)
+    println(Math(10) add 20)
+    println(Math(19).add(20))
     println("********* Lambda Functions *********")
     println(upperCase1("hello"))
     println(upperCase2("hello"))
